@@ -1,0 +1,17 @@
+mport java.util.Scanner;
+import java.util.Locale;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        in.useLocale(Locale.US);
+        double a;
+        a = in.nextDouble();
+        if ((a >= -2 && a <= 3) || (a >= 6 && a <= 9)) {
+            System.out.println("false");
+        }
+        else {
+            System.out.println("true");
+        }
+    }
+}
