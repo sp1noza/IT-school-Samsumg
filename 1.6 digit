@@ -1,0 +1,14 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if ((a/10 == 0) && (a >= 0)) System.out.printf("DIGIT");
+        if ((a/100 == 0) && a >= 10) System.out.printf("NUM");
+        if ((a >= 100) || (a < 0)) System.out.printf("OTHER");
+    }
+
+}
